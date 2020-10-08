@@ -18,5 +18,8 @@
   "homepage": "https://github.com/einarpalsson/verkefni6#readme",
   "devDependencies": {
     "browser-sync": "^2.26.12"
+  },
+  "dependencies": {
+    "node-sass": "^4.14.1"
   }
 }
