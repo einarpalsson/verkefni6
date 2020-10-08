@@ -4,7 +4,10 @@
   "description": "pakkastj+ori",
   "main": "index.js",
   "scripts": {
-    "test": "testjson"
+    "browser-sync": "browser-sync start --server",
+    "sass": "node-sass --source-map-embed styles.scss styles.css",
+    "sass-watch": "node-sass --source-map-embed --watch *.scss --recursive styles.css",
+    "dev": "concurrently npm:sass-watch npm:browser-sync"
   },
   "repository": {
     "type": "git",
