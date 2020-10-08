@@ -1,2 +1,79 @@
 // Sækja config
 // Allir stílar fyrir events
+
+@import 'styles/config';
+
+.headline {
+  margin-top: 1rem;
+  margin-bottom: $margin-bottom;
+}
+
+.flip {
+  height: 11.75rem;
+  width: 100%;
+  background-color: $ljosgrar;
+}
+
+.event {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  transform-style: $transform-style;
+  transition: $transition1;
+
+  &:hover {
+    transform: $transf-rot;
+  }
+}
+
+.front {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  word-break: break-word;
+  text-align: center;
+  backface-visibility: hidden;
+  padding: 0.5;
+  background-color: $ljosgrar;
+}
+
+.face {
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+.flexer {
+  display: flex;
+  justify-content: space-between;
+  word-break: break-word;
+  flex-direction: column;
+  font-size: 0.875rem;
+  padding: 0.5rem;
+}
+
+.back {
+  transform: $transf-rot;
+  font-size: 0.875rem;
+  padding: 0.5rem;
+  background-color: $ljosgrar;
+}
+
+.innihald {
+  font-style: italic;
+  line-height: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.innihald-fundur {
+  font-style: italic;
+  line-height: 1.5rem;
+}
+
+.fundur {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
