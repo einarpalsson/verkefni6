@@ -1,0 +1,22 @@
+{
+  "name": "vef1-2020-v6",
+  "version": "1.0.0",
+  "description": "pakkastj+ori",
+  "main": "index.js",
+  "scripts": {
+    "test": "testjson"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/einarpalsson/verkefni6.git"
+  },
+  "author": "einar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/einarpalsson/verkefni6/issues"
+  },
+  "homepage": "https://github.com/einarpalsson/verkefni6#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.12"
+  }
+}
