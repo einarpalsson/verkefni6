@@ -40,28 +40,8 @@
   }
 }
 
-.col-1 {
-  width: 8.333333333%;
-}
-
-.col-3 {
-  width: 25%;
-}
-
-.col-4 {
-  width: 33.333333332%;
-}
-
-.col-6 {
-  width: 50%;
-}
-
-.col-8 {
-  width: 66.666666664%;
-}
-
-.offset-col-1 {
-  margin-left: 8.333333333%;
+@for $i from 1 through 8 {
+  .col-#{$i} {width: 8.333333333% * $i; }
 }
 
 .offset-col-4 {
