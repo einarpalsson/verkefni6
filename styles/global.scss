@@ -4,17 +4,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
 
-
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  font-size: 16px;
-  font-family: 'Open Sans', helvetica, arial, sans-serif;
   color: $dokkgrar;
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+  font-size: 16px;
 }
 
 h1,

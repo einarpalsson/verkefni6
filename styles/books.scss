@@ -3,13 +3,20 @@
 
 @import 'styles/config';
 
+.myndir img {
+  height: 200px;
+  object-fit: cover;
+  transition: $transition1;
+  width: 100%;
+}
+
 .product-card {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  word-break: break-word;
   background-color: $ljosgrar;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   height: 100%;
+  word-break: break-word;
 
   &:hover img {
     transform: $transf-scale;
@@ -18,30 +25,23 @@
 
 .myndir {
   display: flex;
-  width: 100%;
   overflow: hidden;
-}
-
-.myndir img {
   width: 100%;
-  object-fit: cover;
-  height: 200px;
-  transition: $transition1;
 }
 
 .content {
   display: flex;
-  flex-direction: column;
-  text-align: start;
-  padding: 0.5rem;
   flex: 1;
+  flex-direction: column;
+  padding: 0.5rem;
+  text-align: start;
 }
 
 .nofn {
-  text-transform: uppercase;
   font-weight: 400;
-  margin-top: 0.5rem;
   margin-bottom: $margin-bottom;
+  margin-top: 0.5rem;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -49,32 +49,32 @@ h3 {
 }
 
 .kaupa {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: space-between;
   margin: 0.5rem;
 }
 
 button {
   background-color: $dokkgrar;
-  color: $nanasthvitur;
-  padding: 0.5rem;
   border: 1px solid $svartur;
   border-radius: 0.4rem;
+  color: $nanasthvitur;
+  padding: 0.5rem;
 
   &:hover {
-    transition: $transition2; //Þarf að gera Variable
     background-color: $nanasthvitur;
-    cursor: pointer;
     color: $svartur;
+    cursor: pointer;
+    transition: $transition2; //Þarf að gera Variable
   }
 
   &:active {
-    transition: $transition2; // Þarf að búa til Variable
     background-color: $dokkgrar;
-    color: $nanasthvitur;
-    padding: 0.5rem;
     border: 1px solid $svartur;
     border-radius: 0.4rem;
+    color: $nanasthvitur;
+    padding: 0.5rem;
+    transition: $transition2; // Þarf að búa til Variable
   }
 }

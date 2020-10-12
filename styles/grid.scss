@@ -3,10 +3,9 @@
 
 // Hér skal nota scss @for til að ítra út klösum fyrir grid
 
-
-.grid{
-  max-width: $max-width;
+.grid {
   margin: 0 auto;
+  max-width: $max-width;
   overflow: hidden;
 }
 
@@ -17,8 +16,8 @@
   margin-right: -10px;
 
   @media (max-width: 1230px) {
-      margin-left: 0;
-      margin-right: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -28,41 +27,42 @@
   width: 100%;
 
   @media (max-width: 800px) {
-    width: 66.666666666%;
     padding-left: 10px;
     padding-right: 10px;
+    width: 66.666666666%;
   }
 
   @media (max-width: 500px) {
-    width: 41.6666666666%;
     padding-left: 10px;
     padding-right: 10px;
+    width: 41.6666666666%;
   }
 }
 
 @for $i from 1 through 8 {
-  .col-#{$i} {width: 8.333333333% * $i; }
+  .col-#{$i} { width: 8.333333333% * $i; }
 }
 
 .offset-col-4 {
   margin-left: 25%;
 }
+
 .offset-col-9 {
   margin-right: 25%;
 }
 
 @media (max-width: 800px) {
   .col-4-800px {
-    margin-left: 8.333333333%;
-    width: 83.333333334%;
     margin-bottom: 0.5rem;
+    margin-left: 8.333333333%;
     margin-top: 0.5rem;
+    width: 83.333333334%;
   }
 
   .col-3-800px {
-    width: 50%;
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;
+    width: 50%;
   }
 }
 

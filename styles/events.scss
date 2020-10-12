@@ -4,22 +4,22 @@
 @import 'styles/config';
 
 .headline {
-  margin-top: 1rem;
   margin-bottom: $margin-bottom;
+  margin-top: 1rem;
 }
 
 .flip {
+  background-color: $ljosgrar;
   height: 11.75rem;
   width: 100%;
-  background-color: $ljosgrar;
 }
 
 .event {
-  position: relative;
   height: 100%;
-  width: 100%;
+  position: relative;
   transform-style: $transform-style;
   transition: $transition1;
+  width: 100%;
 
   &:hover {
     transform: $transf-rot;
@@ -27,45 +27,45 @@
 }
 
 .front {
-  position: absolute;
+  backface-visibility: hidden;
+  background-color: $ljosgrar;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   flex-wrap: wrap;
-  word-break: break-word;
-  text-align: center;
-  backface-visibility: hidden;
+  justify-content: center;
   padding: 0.5;
-  background-color: $ljosgrar;
+  position: absolute;
+  text-align: center;
+  word-break: break-word;
 }
 
 .face {
+  backface-visibility: hidden;
   height: 100%;
   width: 100%;
-  backface-visibility: hidden;
 }
 
 .flexer {
   display: flex;
-  justify-content: space-between;
-  word-break: break-word;
   flex-direction: column;
   font-size: 0.875rem;
+  justify-content: space-between;
   padding: 0.5rem;
+  word-break: break-word;
 }
 
 .back {
-  transform: $transf-rot;
+  background-color: $ljosgrar;
   font-size: 0.875rem;
   padding: 0.5rem;
-  background-color: $ljosgrar;
+  transform: $transf-rot;
 }
 
 .innihald {
   font-style: italic;
   line-height: 1.5rem;
-  padding-top: 1rem;
   padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 .innihald-fundur {
@@ -74,6 +74,6 @@
 }
 
 .fundur {
-  padding-top: 1rem;
   padding-bottom: 1rem;
+  padding-top: 1rem;
 }
